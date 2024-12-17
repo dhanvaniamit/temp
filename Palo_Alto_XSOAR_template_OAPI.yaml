@@ -16,18 +16,19 @@ servers:
 
 components:
   securitySchemes:
-  ApiKeyAuth:
-    type: apiKey
-    name: Authorization
-    in: header
   XdrAuthId:
     type: apiKey
     name: x-xdr-auth-id
     in: header
+  ApiKeyAuth:
+    type: apiKey
+    name: Authorization
+    in: header
 
 security:
-  - ApiKeyAuth: [{ ApiKeyAuth: [], XdrAuthId: [] }]
-
+  - XdrAuthId: []
+    ApiKeyAuth: []
+    
 paths:
 
 ####################################################################################
