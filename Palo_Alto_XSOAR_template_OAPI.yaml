@@ -11,7 +11,7 @@ info:
   version: "v1.0.0"
     
 servers:
-  - url: https://api-02019994115dev.crtx.ca.paloaltonetworks.com/XSOAR
+  - url: https:///XSOAR
 #   Replace the above URL with your Palo Alto XSOAR URL.
 
 components:
